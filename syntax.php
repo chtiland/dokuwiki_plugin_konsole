@@ -115,7 +115,7 @@ class syntax_plugin_konsole extends DokuWiki_Syntax_Plugin {
 	    switch ($state) {
 		case DOKU_LEXER_ENTER :
 		    $arr_retour = explode(',',$data);
-		    $nom_user = $arr_retour[1];if(empty($nom_user)) $nom_user='ROOT';
+		    $nom_user = $arr_retour[1];if(empty($nom_user)) $nom_user='USER';
 		    $classe = $arr_retour[0];
 		    $renderer->doc.= '<div class="konsole">';
 		    $renderer->doc.= '<div class="konsole_top_left"></div><div class="konsole_top">'.$nom_user.'</div><div class="konsole_top_right"></div>';
