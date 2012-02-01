@@ -1,0 +1,9 @@
+# General Plugin Info do not edit
+
+base   konsole
+author Fabrice DEJAIGHER pour Chtiland
+email  fabrice@chtiland.com
+date   2012-01-30
+name   Plugin Konsole
+desc   Another terminal plugin with no pre, but div only.
+url    http://www.chtiland.fr
