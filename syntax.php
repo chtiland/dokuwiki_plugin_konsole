@@ -88,9 +88,10 @@ class syntax_plugin_konsole extends DokuWiki_Syntax_Plugin {
 	    case DOKU_LEXER_UNMATCHED :	// Contenu du terminal
 		$divreturn = $match;
 		foreach ($this->motsclefs as $motclef) {
-		    $motclef = ' '.$motclef.' ';
 		    $motclef_hi = '<b>'.$motclef.'</b>';
-		    $divreturn = str_replace("$motclef", $motclef_hi, $divreturn);
+		    $divreturn = str_replace(" $motclef ", " $motclef_hi ", $divreturn);
+		    $divreturn = preg_replace("/\s$motclef$/", " $motclef_hi", $divreturn);
+		    //$divreturn = preg_replace("/\s $motclef\r/", " $motclef_hi\n", $divreturn);
 		}
 		
 		/*$data = str_replace("\r", '', $data);*/
