@@ -1,6 +1,6 @@
 <?php
 /**
- * DokuWiki Plugin minecraft (Syntax Component)
+ * DokuWiki Plugin konsole (Syntax Component)
  *
  * @license GPL 2 http://www.gnu.org/licenses/gpl-2.0.html
  * @author  Fabrice DEJAIGHER <fabrice@chtiland.com>
@@ -110,13 +110,16 @@ class syntax_plugin_konsole extends DokuWiki_Syntax_Plugin {
     }
 
     public function render($mode, &$renderer, $indata) {
-	global $type_crafting;
 	list($state, $data) = $indata;
         if($mode == 'xhtml') {
 	    switch ($state) {
 		case DOKU_LEXER_ENTER :
 		    $arr_retour = explode(',',$data);
-		    $nom_user = $arr_retour[1];if(empty($nom_user)) $nom_user='USER';
+		    $nom_user = $arr_retour[1];
+                    if(empty($nom_user)) 
+                    {
+                        $nom_user='USER';
+                    }
 		    $classe = $arr_retour[0];
 		    $renderer->doc.= '<div class="konsole">';
 		    $renderer->doc.= '<div class="konsole_top_left"></div><div class="konsole_top">'.$nom_user.'</div><div class="konsole_top_right"></div>';
@@ -145,5 +148,3 @@ class syntax_plugin_konsole extends DokuWiki_Syntax_Plugin {
         
     }
 }
-
-?>

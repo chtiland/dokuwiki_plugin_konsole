@@ -1,6 +1,6 @@
 <?php
 /**
- * Default settings for the minecraft plugin
+ * Default settings for the konsole plugin
  *
  * @author Fabrice DEJAIGHER <fabrice@chtiland.com>
  */

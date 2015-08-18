@@ -1,6 +1,6 @@
 <?php
 /**
- * DokuWiki Plugin minecraft (Admin Component)
+ * DokuWiki Plugin konsole (Admin Component)
  *
  * @license GPL 2 http://www.gnu.org/licenses/gpl-2.0.html
  * @author  Fabrice DEJAIGHER <fabrice@chtiland.com>
@@ -15,7 +15,7 @@ if (!defined('DOKU_PLUGIN')) define('DOKU_PLUGIN',DOKU_INC.'lib/plugins/');
 
 require_once DOKU_PLUGIN.'admin.php';
 
-class admin_plugin_minecraft extends DokuWiki_Admin_Plugin {
+class admin_plugin_konsole extends DokuWiki_Admin_Plugin {
 
     public function getMenuSort() { return FIXME; }
     public function forAdminOnly() { return false; }

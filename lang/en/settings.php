@@ -1,6 +1,6 @@
 <?php
 /**
- * english language file for minecraft plugin
+ * english language file for konsole plugin
  *
  * @author Fabrice DEJAIGHER <fabrice@chtiland.com>
  */
