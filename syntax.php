@@ -66,7 +66,7 @@ class syntax_plugin_konsole extends DokuWiki_Syntax_Plugin {
         $this->Lexer->addExitPattern('</konsole>','plugin_konsole');
     }
 
-    public function handle($match, $state, $pos, &$handler){
+    public function handle($match, $state, $pos, Doku_Handler $handler){
 	//global $type_user;
 	switch ($state) {
 	    case DOKU_LEXER_ENTER : // Type de craft
@@ -109,7 +109,7 @@ class syntax_plugin_konsole extends DokuWiki_Syntax_Plugin {
 	
     }
 
-    public function render($mode, &$renderer, $indata) {
+    public function render($mode, Doku_Renderer $renderer, $indata) {
 	list($state, $data) = $indata;
         if($mode == 'xhtml') {
 	    switch ($state) {
