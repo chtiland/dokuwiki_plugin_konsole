@@ -19,18 +19,20 @@
     height: 261px;
     width: 584px;
     padding: 5px;
-    
-    
+
+
 }
 
 
 .konsoleuser {
   background-color: #000;
-  
+  box-sizing: content-box;
+
 }
 
 .konsoleroot {
   background-color: #800000;
+  box-sizing: content-box;
 }
 
 .konsole_top_left{
@@ -53,6 +55,7 @@
     padding-right: 25px;
     text-align: center;
     font-weight: bold;
+	box-sizing: content-box;
 }
 
 .konsole_top_right {
@@ -111,8 +114,15 @@
 
 .konsoleuser b {
     color: #2dadee;
+	box-sizing: content-box;
 }
 
 .konsoleroot b {
     color: #2dadee;
+	box-sizing: content-box;
 }
+
+div.picker.konsole_toolbar {
+	width: auto;
+}
+
